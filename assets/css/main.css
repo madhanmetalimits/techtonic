@@ -369,9 +369,8 @@ body {
   background-size: cover; /* Ensure the image covers the entire container */
 }
 
-
 .body-image-container img {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
@@ -529,17 +528,158 @@ body {
   background: linear-gradient(to right, #e78b8c, #6681ae, #44a5ff);
 }
 
-/* @media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .image-heading {
     font-size: 50px;
+    width: 60%;
   }
 
-  .button-title {
-    font-size: 26px;
+  .course-button-wrapper,
+  .demo-button-wrapper {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .heading-text {
+    font-size: 18px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+
+  .header-title-main {
+    font-size: 25px;
+  }
+
+  .image-content {
+    position: absolute;
+    top: 18%;
+    left: 30px;
+  }
+
+  .image-heading {
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .course-button-wrapper,
+  .demo-button-wrapper {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .button-title {
+    font-size: 16px;
+  }
+
+  .message-info {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .main-content-row {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .who-container,
+  .what-container,
+  .why-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 65%;
+    gap: 0;
+  }
+
+  .who-container img {
+    width: 60%;
+  }
+
+  .what-container img {
+    width: 60%;
+  }
+
+  .why-container img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-title-main {
+    font-size: 25px;
+  }
+
+  .linkedin-container,
+  .whatsapp-container {
+    display: none;
+  }
+
+  .image-content {
+    position: absolute;
+    top: 18%;
+    left: 30px;
+  }
+
+  .image-heading {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .course-button-wrapper,
+  .demo-button-wrapper {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .button-title {
+    font-size: 16px;
+  }
+
+  .message-info {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .main-content-row {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .who-container,
+  .what-container,
+  .why-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 65%;
+    gap: 0;
+  }
+
+  .who-container img {
+    width: 60%;
+  }
+
+  .what-container img {
+    width: 60%;
+  }
+
+  .why-container img {
+    width: 60%;
+  }
+}
+
+/* @media (max-width: 1000px) {
   .image-heading {
     font-size: 40px;
   }
