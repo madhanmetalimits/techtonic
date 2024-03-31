@@ -548,10 +548,10 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .image-heading {
+  /* .image-heading {
     font-size: 50px;
     width: 60%;
-  }
+  } */
 
 }
 
