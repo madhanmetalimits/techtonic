@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>techtonic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="HTML5 website template" />
+    <meta name="keywords" content="global, template, html, sass, jquery" />
+    <meta name="author" content="Bucky Maler" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/base/_body-element.sass" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="perspective effect-rotate-left">
+      <div class="wrapper">
+        <div class="container">
+          <header class="header">
+            <a href="index.html">
+              <img
+                src="assets/img/logo.png"
+                alt="logo"
+                width="75"
+                height="75"
+              />
+            </a>
+            <div class="header-title">
+              <div class="title">
+                <span class="header-title-main">TechTonic</span>
+                <span class="header-title-second">Learning Solutions</span>
+              </div>
+            </div>
+            <div class="linkedin-container">
+              <img
+                src="assets/img/linkedin.svg"
+                alt="linkein"
+                width="30"
+                height="30"
+              />
+              <div class="contact-value">techtoniclearning</div>
+            </div>
+            <div class="whatsapp-container">
+              <img
+                src="assets/img/whatsapp.svg"
+                alt="whatsapp"
+                width="30"
+                height="30"
+              />
+              <div class="contact-value">+919944661437</div>
+            </div>
+          </header>
+          <div class="content-body-who">
+            <div class="image-warpper">
+              <div class="who-image">
+                <div class="body-image-who-container">
+                  <img
+                    class="animated-img"
+                    src="assets/img/why_choose_us-1.png"
+                  />
+                </div>
+              </div>
+              <div class="who-image">
+                <div class="body-image-who-container">
+                  <img
+                    class="animated-img"
+                    src="assets/img/why_choose_us-2.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to add animation class when image enters viewport
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+
+      // Create a new Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5, // Trigger animation when at least 50% of the image is visible
+      });
+
+      // Select all images to be observed
+      const animatedImages = document.querySelectorAll(".animated-img");
+
+      // Observe each image
+      animatedImages.forEach((img) => {
+        observer.observe(img);
+      });
+    </script>
+  </body>
+</html>
